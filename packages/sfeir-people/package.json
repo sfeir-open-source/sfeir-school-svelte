@@ -1,7 +1,7 @@
 {
-  "name": "@sfeir-school-svelte/sfeir-people",
-  "version": "0.0.0",
-  "scripts": {
-    "test": "node index.js"
-  }
+	"name": "sfeir-people",
+	"scripts": {
+		"start": "vite dev"
+	},
+	"type": "module"
 }

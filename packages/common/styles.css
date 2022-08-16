@@ -1,0 +1,8 @@
+img[alt="People logo"] {
+  height: 40px;
+}
+
+main {
+  max-width: 1200px;
+  margin: 2rem auto;
+}
