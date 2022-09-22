@@ -1,0 +1,7 @@
+{
+	"name": "sfeir-people",
+	"scripts": {
+		"start": "vite dev"
+	},
+	"type": "module"
+}
