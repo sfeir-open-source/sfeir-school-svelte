@@ -1,14 +1,14 @@
 <script lang="ts">
 	import PersonList from '$lib/person-list/PersonList.svelte';
 
-	let data;
+	/** @type {import('./$types').PageData} */
+  export let data;
 
-  $: console.log(data);
+
 </script>
 
 {#if data?.length > 0}
-  {data}
-	<!-- <PersonList people={data} /> -->
+	<PersonList people={data} />
 {:else}
 	loading
 {/if}
