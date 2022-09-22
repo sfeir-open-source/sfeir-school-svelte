@@ -1,3 +1,9 @@
+
+
+export const nextIndex = (min, max) => (x) => (x === max ? min : x + 1);
+
+export const previousIndex = (min, max) => (x) => (x === min ? max : x - 1);
+
 export const loadPeople = (): Promise<People> =>
   fetch("http://localhost:4000/people").then((res) => res.json());
 
