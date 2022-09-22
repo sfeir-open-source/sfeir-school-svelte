@@ -30,8 +30,8 @@
 		/>
 		<TextField bind:value={person.email} id="email" label="Email" />
 		<TextField bind:value={person.phone} id="phone" label="Phone" />
-		<div>
-			<button class="mdl-button mdl-js-button mdl-button--raised"> Submit </button>
-		</div>
+    <div class="buttons">
+      <button type="submit" class="button is-primary">Submit</button>
+    </div>
 	</form>
 </Card>

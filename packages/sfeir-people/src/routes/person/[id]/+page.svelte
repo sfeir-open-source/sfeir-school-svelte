@@ -4,12 +4,4 @@
 	export let data: Person;
 </script>
 
-<div class="mdl-grid">
-	<PersonCard person={data} isEditable={true} />
-</div>
-
-<style>
-  .mdl-grid {
-    justify-content: center;
-  }
-</style>
+	<PersonCard person={data} isEditable={true} class="mt-5"/>
