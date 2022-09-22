@@ -17,12 +17,12 @@
       <div class="mdl-layout-spacer"></div>
 
       <div>
-        <button class="mdl-button mdl-js-button mdl-button--icon">
+        <a href="/list" class="mdl-button mdl-js-button mdl-button--icon">
           <i class="material-icons">view_module</i>
-        </button>
-        <button class="mdl-button mdl-js-button mdl-button--icon">
+        </a>
+        <a href="/carousel" class="mdl-button mdl-js-button mdl-button--icon">
           <i class="material-icons">view_carousel</i>
-        </button>
+        </a>
       </div>
     </div>
   </header>

@@ -3,13 +3,10 @@
 
 	/** @type {import('./$types').PageData} */
   export let data;
-
-  console.log($$props);
-
 </script>
 
-{#if data?.length > 0}
-	<PersonList people={data} />
+{#if data?.people?.length > 0}
+	<PersonList people={data.people} />
 {:else}
 	loading
 {/if}
