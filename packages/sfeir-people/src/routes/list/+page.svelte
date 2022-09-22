@@ -2,7 +2,7 @@
 	import PersonList from '$lib/person-list/PersonList.svelte';
 
 	/** @type {import('./$types').PageData} */
-  export let data;
+	export let data;
 </script>
 
 {#if data?.people?.length > 0}
