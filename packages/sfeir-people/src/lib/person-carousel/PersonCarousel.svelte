@@ -2,33 +2,25 @@
 	import PersonCard from '$lib/person-card/PersonCard.svelte';
 	import { range } from '$lib/utils';
 
-	let index = 0;
-
 	export let people: Array<Person> = [];
 
+	let index = 0;
+
 	const { prev, next } = range(0, people.length - 1);
-
-	const handlePrev = () => {
-		index = prev(index);
-	};
-
-	const handleNext = () => {
-		index = next(index);
-	};
 
 	$: triptych = [
 		{ className: 'next', index: prev(index) },
 		{ className: 'current', index },
 		{ className: 'prev', index: next(index) }
-	].map((i) => ({ ...i, person: people[i.index] }));
+	].map(({ className, index }) => ({ className, person: people[index] }));
 </script>
 
 <div class="carousel">
 	<button
 		class="mdl-button mdl-js-button mdl-button--fab mdl-button--colored"
-		on:click={handlePrev}
+		on:click={() => (index = prev(index))}
 	>
-		<i class="material-icons">previous</i>
+		<i class="material-icons">arrow_back</i>
 	</button>
 
 	{#each triptych as { person, className } (person.id)}
@@ -37,9 +29,9 @@
 
 	<button
 		class="mdl-button mdl-js-button mdl-button--fab mdl-button--colored"
-		on:click={handleNext}
+		on:click={() => (index = next(index))}
 	>
-		<i class="material-icons">next</i>
+		<i class="material-icons">arrow_forward</i>
 	</button>
 </div>
 
