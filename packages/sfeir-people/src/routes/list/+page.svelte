@@ -1,18 +1,14 @@
-<script>
-	import PersonList from 'src/lib/person-list/PersonList.svelte';
-import { onMount } from 'svelte';
+<script lang="ts">
+	import PersonList from '$lib/person-list/PersonList.svelte';
 
-	let people = [];
+	let data;
 
-	onMount(() => {
-		fetch('http://localhost:4000/people')
-			.then((res) => res.json())
-			.then((data) => {
-				people = data;
-			});
-	});
+  $: console.log(data);
 </script>
 
-<div class="mdl-grid">
-	<PersonList people={people} />
-</div>
+{#if data?.length > 0}
+  {data}
+	<!-- <PersonList people={data} /> -->
+{:else}
+	loading
+{/if}
