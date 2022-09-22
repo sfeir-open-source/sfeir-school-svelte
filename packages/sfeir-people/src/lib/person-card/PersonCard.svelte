@@ -8,7 +8,7 @@
 	export let isEditable: boolean = false;
 </script>
 
-<div class="person-card mdl-card mdl-shadow--2dp">
+<div class="person-card mdl-card mdl-shadow--2dp {$$props.class || ""}">
 	<div class="card-content">
 		<PersonCardFigure name={person.firstname} photoUrl={person.photo} />
 
