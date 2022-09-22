@@ -3,13 +3,15 @@
 	import PersonCardHeader from './person-card-header/PersonCardHeader.svelte';
 	import PersonCardInfo from './person-card-info/PersonCardInfo.svelte';
 
+  import Card from './../card/Card.svelte';
+
 	export let person: Person;
 
 	export let isEditable: boolean = false;
 </script>
 
-<div class="person-card mdl-card mdl-shadow--2dp {$$props.class || ""}">
-	<div class="card-content">
+<Card class="person-card {$$props.class || ""}">
+	<div>
 		<PersonCardFigure name={person.firstname} photoUrl={person.photo} />
 
 		<PersonCardHeader>
@@ -42,17 +44,13 @@
 			</a>
 		</div>
 	{/if}
-</div>
+  </Card>
 
 <style>
-	.person-card {
+	:global(.person-card) {
 		width: 420px;
 	}
-	.person-card a {
+	:global(.person-card) a {
 		text-decoration: none;
-	}
-
-	.card-content {
-		padding: 10px 20px;
 	}
 </style>
