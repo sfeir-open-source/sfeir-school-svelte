@@ -5,4 +5,4 @@
   $: console.log($$props)
 </script>
 
-<PersonCarousel people={data.people} />
+<PersonCarousel people={data.people} class="mt-4" />
