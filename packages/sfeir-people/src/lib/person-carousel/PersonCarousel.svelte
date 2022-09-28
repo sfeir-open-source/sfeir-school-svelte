@@ -15,53 +15,68 @@
 	].map(({ className, index }) => ({ className, person: people[index] }));
 </script>
 
-<div class="carousel">
+<div class="carousel {$$props.class || ""}">
 	<button
-		class="mdl-button mdl-js-button mdl-button--fab mdl-button--colored"
+  class="button  is-link"
 		on:click={() => (index = prev(index))}
 	>
-		<i class="material-icons">arrow_back</i>
+  <span class="icon">
+    <i class="fa-solid fa-arrow-left fa-lg" />
+  </span>
 	</button>
 
-	{#each triptych as { person, className } (person.id)}
-		<PersonCard {person} class={className} />
-	{/each}
+	<div class="cards">
+		{#each triptych as { person, className } (person.id)}
+			<PersonCard {person} class={className} />
+		{/each}
+	</div>
 
 	<button
-		class="mdl-button mdl-js-button mdl-button--fab mdl-button--colored"
+  class="button  is-link"
 		on:click={() => (index = next(index))}
 	>
-		<i class="material-icons">arrow_forward</i>
+  <span class="icon">
+    <i class="fa-solid fa-arrow-right fa-lg" />
+  </span>
 	</button>
 </div>
 
 <style>
 	.carousel {
-		position: relative;
-		flex-grow: 1;
-		height: 300px;
 		display: flex;
 		align-items: center;
+    padding: 3rem 0;
+    min-height: 320px;
+	}
+
+	.cards {
+		position: relative;
+		flex-grow: 1;
+		display: flex;
 		justify-content: center;
 	}
 
-	.carousel > :global(.person-card) {
-		position: absolute;
+	.cards > :global(.person-card) {
 		margin: 0;
 		display: none;
+		top: 0;
+		width: 30rem;
 	}
-	.carousel > :global(.person-card.current),
-	.carousel > :global(.person-card.prev),
-	.carousel > :global(.person-card.next) {
+
+	.cards > :global(.person-card.current),
+	.cards > :global(.person-card.prev),
+	.cards > :global(.person-card.next) {
 		display: initial;
 		transition: transform 0.5s ease;
 	}
-	.carousel > :global(.person-card.prev) {
+	.cards > :global(.person-card.prev) {
 		transform: scale(0.6) translateY(150px);
 		z-index: -1;
+		position: absolute;
 	}
-	.carousel > :global(.person-card.next) {
+	.cards > :global(.person-card.next) {
 		transform: scale(0.6) translateY(-150px);
 		z-index: -1;
+		position: absolute;
 	}
 </style>

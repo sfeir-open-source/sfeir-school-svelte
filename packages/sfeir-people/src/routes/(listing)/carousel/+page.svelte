@@ -5,4 +5,7 @@
   $: console.log($$props)
 </script>
 
-<PersonCarousel people={data.people} />
+<div class="container is-max-desktop">
+  <PersonCarousel people={data.people} class="mt-4" />
+</div>
+

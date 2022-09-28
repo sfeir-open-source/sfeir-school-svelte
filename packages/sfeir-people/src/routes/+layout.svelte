@@ -4,47 +4,40 @@
 </script>
 
 <svelte:head>
-	<link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons" />
-	<link rel="stylesheet" href="https://code.getmdl.io/1.3.0/material.indigo-blue.min.css" />
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.4/css/bulma.min.css">
+  <script src="https://kit.fontawesome.com/ea210a45ce.js" crossorigin="anonymous"></script>
 </svelte:head>
 
-<div class="mdl-layout mdl-js-layout mdl-layout--fixed-header">
-	<header class="mdl-layout__header">
-		<div class="mdl-layout__header-row">
-			<img src={logo} alt="People logo" />
+<nav class="navbar is-dark is-fixed-top" aria-label="main navigation">
+  <div class="container">
+  <div class="navbar-brand">
+    <a class="navbar-item" href="/">
+    	<img src={logo} alt="People logo" width="100px"/>
+    </a>
+  </div>
 
-			<div class="mdl-layout-spacer" />
+  <div class="navbar-menu">
+    <div class="navbar-end">
+      <div class="navbar-item">
+        <div class="buttons">
+          <a href="/list" class="button is-link">
+            <span class="icon">
+              <i class="fa-solid fa-list"></i>
+            </span>
+          </a>
+          <a href="/carousel" class="button is-link">
+            <span class="icon">
+              <i class="fa-solid fa-layer-group"></i>
+            </span>
+          </a>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+</nav>
 
-			<div>
-				<a
-					href="/list"
-					class="mdl-button mdl-js-button mdl-button--icon"
-					class:mdl-button--raised={$page.url.pathname === '/list'}
-				>
-					<i class="material-icons">view_module</i>
-				</a>
-				<a
-					href="/carousel"
-					class="mdl-button mdl-js-button mdl-button--icon"
-					class:mdl-button--raised={$page.url.pathname === '/carousel'}
-				>
-					<i class="material-icons">view_carousel</i>
-				</a>
-			</div>
-		</div>
-	</header>
-
-	<main class="mdl-layout__content">
-		<div class="page-content">
-			<slot />
-		</div>
-	</main>
+<div class="container">
+  <slot/>
 </div>
 
-<style>
-	@import '../../../common/styles.css';
-
-	main {
-		margin-top: 20px;
-	}
-</style>

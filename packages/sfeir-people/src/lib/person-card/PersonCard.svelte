@@ -3,18 +3,16 @@
 	import PersonCardHeader from './person-card-header/PersonCardHeader.svelte';
 	import PersonCardInfo from './person-card-info/PersonCardInfo.svelte';
 
-  import Card from './../card/Card.svelte';
+	import Card from './../card/Card.svelte';
 
 	export let person: Person;
 
 	export let isEditable: boolean = false;
 </script>
 
-<Card class="person-card {$$props.class || ""}">
+<Card class="person-card {$$props.class || ''}">
 	<div>
-		<PersonCardFigure name={person.firstname} photoUrl={person.photo} />
-
-		<PersonCardHeader>
+		<PersonCardHeader photo={person.photo}>
 			<a slot="title" href={`/person/${person.id}`}>{person.firstname} {person.lastname}</a>
 			<span slot="subtitle">{person.position}</span>
 		</PersonCardHeader>
@@ -34,23 +32,9 @@
 		{/if}
 	</div>
 
-	{#if isEditable}
-		<div class="mdl-card__actions mdl-card--border">
-			<a
-				href={`/person/${person.id}/edit`}
-				class="mdl-button mdl-button--colored mdl-js-button mdl-js-ripple-effect"
-			>
-				Edit information
-			</a>
-		</div>
-	{/if}
-  </Card>
-
-<style>
-	:global(.person-card) {
-		width: 420px;
-	}
-	:global(.person-card) a {
-		text-decoration: none;
-	}
-</style>
+	<svelte:fragment slot="footer">
+		{#if isEditable}
+			<a href={`/person/${person.id}/edit`} class="card-footer-item"> Edit information </a>
+		{/if}
+	</svelte:fragment>
+</Card>

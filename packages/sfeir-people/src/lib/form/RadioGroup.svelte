@@ -5,14 +5,20 @@
 	export let label: string = '';
 </script>
 
-<div>
-	<label class="mdl-checkbox__label" for={id}>{label}</label>
+<div class="field">
+	<label class="label" for={id}>{label}</label>
+  <div class="control">
 	{#each options as option}
-  <div>
-  <label class="mdl-radio mdl-js-radio mdl-js-ripple-effect" for="{id}-{option.value}">
-    <input type="radio" id="{id}-{option.value}" class="mdl-radio__button" name={id} value={option.value} bind:group={value}>
-    <span class="mdl-radio__label">{option.label}</span>
-  </label>
-</div>
-  {/each}
+		<label class="radio">
+			<input
+				type="radio"
+				name={id}
+				id="{id}-{option.value}"
+				value={option.value}
+				bind:group={value}
+			/>
+			{option.label}
+		</label>
+	{/each}
+  </div>
 </div>
