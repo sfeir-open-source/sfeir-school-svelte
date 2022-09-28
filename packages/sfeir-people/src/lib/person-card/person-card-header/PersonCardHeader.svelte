@@ -1,19 +1,16 @@
-<header>
-  <h1 class="mdl-typography--title">
-    <slot name="title" />
-  </h1>
-  <h2 class="mdl-typography--subhead"><slot name="subtitle" /></h2>
-</header>
+<script>
+  export let photo = "";
+  export let name = ""
+</script>
 
-<style>
-  header {
-    padding: 16px 0;
-    width: 380px;
-  }
-  header > h1 {
-    margin: 0;
-  }
-  header > h2 {
-    margin: 0;
-  }
-</style>
+<div class="media">
+  <div class="media-left">
+    <figure class="image is-64x64">
+      <img src={photo} alt="Face of {name}">
+    </figure>
+  </div>
+  <div class="media-content">
+    <p class="title is-4"><slot name="title"/></p>
+    <p class="subtitle is-6"><slot name="subtitle"/></p>
+  </div>
+</div>

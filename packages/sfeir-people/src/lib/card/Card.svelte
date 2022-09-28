@@ -1,9 +1,10 @@
-<div class="mdl-card mdl-shadow--2dp card {$$props.class || ""}">
-  <slot />
+<div class="card {$$props.class || ''}">
+	<div class="card-content">
+		<slot />
+	</div>
+	{#if $$slots.footer}
+		<div class="card-footer">
+			<slot name="footer" />
+		</div>
+	{/if}
 </div>
-
-<style>
-  .card {
-    padding: 10px 20px;
-  }
-</style>
