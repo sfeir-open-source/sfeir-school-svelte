@@ -4,7 +4,8 @@
   "license": "MIT",
   "scripts": {
     "start:server": "json-server --port 4000 -q --watch ./data/people.json",
-    "start:sfeir-people": "npm run start:server & nx start sfeir-people"
+    "start:sfeir-people": "npm run start:server & nx start sfeir-people",
+    "start:1": "nx start workshop-01"
   },
   "private": true,
   "dependencies": {

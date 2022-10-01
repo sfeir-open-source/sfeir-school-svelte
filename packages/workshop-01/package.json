@@ -1,0 +1,7 @@
+{
+	"name": "workshop-01",
+	"scripts": {
+		"start": "vite dev"
+	},
+	"type": "module"
+}

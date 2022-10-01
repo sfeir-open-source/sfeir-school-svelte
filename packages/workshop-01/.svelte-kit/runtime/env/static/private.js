@@ -1,0 +1,210 @@
+// this file is generated — do not edit it
+/** @type {import('$env/static/private').NVM_INC} */
+export const NVM_INC = "/Users/ROMAIN/.nvm/versions/node/v16.14.0/include/node";
+
+/** @type {import('$env/static/private').NX_CLI_SET} */
+export const NX_CLI_SET = "true";
+
+/** @type {import('$env/static/private')._VOLTA_TOOL_RECURSION} */
+export const _VOLTA_TOOL_RECURSION = "1";
+
+/** @type {import('$env/static/private').npm_config_legacy_peer_deps} */
+export const npm_config_legacy_peer_deps = "true";
+
+/** @type {import('$env/static/private').TERM_PROGRAM} */
+export const TERM_PROGRAM = "vscode";
+
+/** @type {import('$env/static/private').NODE} */
+export const NODE = "/Users/ROMAIN/.nvm/versions/node/v16.14.0/bin/node";
+
+/** @type {import('$env/static/private').INIT_CWD} */
+export const INIT_CWD = "/Users/ROMAIN/SFEIR/sfeir-school-svelte/packages/workshop-01";
+
+/** @type {import('$env/static/private').NVM_CD_FLAGS} */
+export const NVM_CD_FLAGS = "-q";
+
+/** @type {import('$env/static/private').TERM} */
+export const TERM = "xterm-256color";
+
+/** @type {import('$env/static/private').SHELL} */
+export const SHELL = "/bin/zsh";
+
+/** @type {import('$env/static/private').npm_config_metrics_registry} */
+export const npm_config_metrics_registry = "https://registry.npmjs.org/";
+
+/** @type {import('$env/static/private').TMPDIR} */
+export const TMPDIR = "/var/folders/wt/t42rpbt56r3_jf1nmktzfbj80000gp/T/";
+
+/** @type {import('$env/static/private').npm_config_global_prefix} */
+export const npm_config_global_prefix = "/Users/ROMAIN/.nvm/versions/node/v16.14.0";
+
+/** @type {import('$env/static/private').TERM_PROGRAM_VERSION} */
+export const TERM_PROGRAM_VERSION = "1.71.2";
+
+/** @type {import('$env/static/private').ZDOTDIR} */
+export const ZDOTDIR = "/var/folders/wt/t42rpbt56r3_jf1nmktzfbj80000gp/T/vscode-zsh";
+
+/** @type {import('$env/static/private').VOLTA_HOME} */
+export const VOLTA_HOME = "/Users/ROMAIN/.volta";
+
+/** @type {import('$env/static/private').ORIGINAL_XDG_CURRENT_DESKTOP} */
+export const ORIGINAL_XDG_CURRENT_DESKTOP = "undefined";
+
+/** @type {import('$env/static/private').MallocNanoZone} */
+export const MallocNanoZone = "0";
+
+/** @type {import('$env/static/private').COLOR} */
+export const COLOR = "0";
+
+/** @type {import('$env/static/private').npm_config_noproxy} */
+export const npm_config_noproxy = "";
+
+/** @type {import('$env/static/private').npm_config_local_prefix} */
+export const npm_config_local_prefix = "/Users/ROMAIN/SFEIR/sfeir-school-svelte/packages/workshop-01";
+
+/** @type {import('$env/static/private').ZSH} */
+export const ZSH = "/Users/ROMAIN/.oh-my-zsh";
+
+/** @type {import('$env/static/private').USER} */
+export const USER = "ROMAIN";
+
+/** @type {import('$env/static/private').NVM_DIR} */
+export const NVM_DIR = "/Users/ROMAIN/.nvm";
+
+/** @type {import('$env/static/private').COMMAND_MODE} */
+export const COMMAND_MODE = "unix2003";
+
+/** @type {import('$env/static/private').npm_config_globalconfig} */
+export const npm_config_globalconfig = "/Users/ROMAIN/.nvm/versions/node/v16.14.0/etc/npmrc";
+
+/** @type {import('$env/static/private').NX_TASK_HASH} */
+export const NX_TASK_HASH = "8f8c4082c0e607feac0c73ac0391bfe7eb7abc1c52532e53e47853fad21168cb";
+
+/** @type {import('$env/static/private').SSH_AUTH_SOCK} */
+export const SSH_AUTH_SOCK = "/private/tmp/com.apple.launchd.FwizX71icL/Listeners";
+
+/** @type {import('$env/static/private').__CF_USER_TEXT_ENCODING} */
+export const __CF_USER_TEXT_ENCODING = "0x1F6:0x0:0x1";
+
+/** @type {import('$env/static/private').npm_execpath} */
+export const npm_execpath = "/Users/ROMAIN/.nvm/versions/node/v16.14.0/lib/node_modules/npm/bin/npm-cli.js";
+
+/** @type {import('$env/static/private').PAGER} */
+export const PAGER = "less";
+
+/** @type {import('$env/static/private').LSCOLORS} */
+export const LSCOLORS = "Gxfxcxdxbxegedabagacad";
+
+/** @type {import('$env/static/private').NX_TASK_TARGET_PROJECT} */
+export const NX_TASK_TARGET_PROJECT = "workshop-01";
+
+/** @type {import('$env/static/private').PATH} */
+export const PATH = "/Users/ROMAIN/SFEIR/sfeir-school-svelte/packages/workshop-01/node_modules/.bin:/Users/ROMAIN/SFEIR/sfeir-school-svelte/packages/node_modules/.bin:/Users/ROMAIN/SFEIR/sfeir-school-svelte/node_modules/.bin:/Users/ROMAIN/SFEIR/node_modules/.bin:/Users/ROMAIN/node_modules/.bin:/Users/node_modules/.bin:/node_modules/.bin:/Users/ROMAIN/.nvm/versions/node/v16.14.0/lib/node_modules/npm/node_modules/@npmcli/run-script/lib/node-gyp-bin:/Users/ROMAIN/SFEIR/sfeir-school-svelte/node_modules/.bin:/Users/ROMAIN/SFEIR/node_modules/.bin:/Users/ROMAIN/node_modules/.bin:/Users/node_modules/.bin:/node_modules/.bin:/Users/ROMAIN/.nvm/versions/node/v16.14.0/lib/node_modules/npm/node_modules/@npmcli/run-script/lib/node-gyp-bin:/usr/local/opt/openjdk/bin:/Applications/Visual Studio Code.app/Contents/Resources/app/bin:/usr/local/Homebrew/bin:/usr/local/Cellar/k9s/0.25.18/bin:/Users/ROMAIN/.yarn/bin:/Users/ROMAIN/.config/yarn/global/node_modules/.bin:/Users/ROMAIN/google-cloud-sdk/bin:/Users/ROMAIN/.nvm/versions/node/v16.14.0/bin:/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin:/usr/local/opt/openjdk/bin:/Applications/Visual Studio Code.app/Contents/Resources/app/bin:/usr/local/Homebrew/bin:/usr/local/Cellar/k9s/0.25.18/bin:/Users/ROMAIN/.yarn/bin:/Users/ROMAIN/.config/yarn/global/node_modules/.bin:/Users/ROMAIN/google-cloud-sdk/bin:/Users/ROMAIN/.nvm/versions/node/v16.14.0/bin";
+
+/** @type {import('$env/static/private').npm_package_json} */
+export const npm_package_json = "/Users/ROMAIN/SFEIR/sfeir-school-svelte/packages/workshop-01/package.json";
+
+/** @type {import('$env/static/private')._} */
+export const _ = "/Users/ROMAIN/SFEIR/sfeir-school-svelte/node_modules/.bin/vite";
+
+/** @type {import('$env/static/private').NX_WORKSPACE_ROOT} */
+export const NX_WORKSPACE_ROOT = "/Users/ROMAIN/SFEIR/sfeir-school-svelte";
+
+/** @type {import('$env/static/private').npm_config_userconfig} */
+export const npm_config_userconfig = "/Users/ROMAIN/.npmrc";
+
+/** @type {import('$env/static/private').npm_config_init_module} */
+export const npm_config_init_module = "/Users/ROMAIN/.npm-init.js";
+
+/** @type {import('$env/static/private').__CFBundleIdentifier} */
+export const __CFBundleIdentifier = "com.microsoft.VSCode";
+
+/** @type {import('$env/static/private').npm_command} */
+export const npm_command = "run-script";
+
+/** @type {import('$env/static/private').PWD} */
+export const PWD = "/Users/ROMAIN/SFEIR/sfeir-school-svelte/packages/workshop-01";
+
+/** @type {import('$env/static/private').npm_lifecycle_event} */
+export const npm_lifecycle_event = "start";
+
+/** @type {import('$env/static/private').EDITOR} */
+export const EDITOR = "vi";
+
+/** @type {import('$env/static/private').npm_package_name} */
+export const npm_package_name = "workshop-01";
+
+/** @type {import('$env/static/private').LANG} */
+export const LANG = "fr_FR.UTF-8";
+
+/** @type {import('$env/static/private').XPC_FLAGS} */
+export const XPC_FLAGS = "0x0";
+
+/** @type {import('$env/static/private').VSCODE_GIT_ASKPASS_EXTRA_ARGS} */
+export const VSCODE_GIT_ASKPASS_EXTRA_ARGS = "--ms-enable-electron-run-as-node";
+
+/** @type {import('$env/static/private').FORCE_COLOR} */
+export const FORCE_COLOR = "true";
+
+/** @type {import('$env/static/private').npm_config_node_gyp} */
+export const npm_config_node_gyp = "/Users/ROMAIN/.nvm/versions/node/v16.14.0/lib/node_modules/npm/node_modules/node-gyp/bin/node-gyp.js";
+
+/** @type {import('$env/static/private').npm_package_version} */
+export const npm_package_version = "0.0.0";
+
+/** @type {import('$env/static/private').XPC_SERVICE_NAME} */
+export const XPC_SERVICE_NAME = "0";
+
+/** @type {import('$env/static/private').VSCODE_INJECTION} */
+export const VSCODE_INJECTION = "1";
+
+/** @type {import('$env/static/private').SHLVL} */
+export const SHLVL = "4";
+
+/** @type {import('$env/static/private').HOME} */
+export const HOME = "/Users/ROMAIN";
+
+/** @type {import('$env/static/private').VSCODE_GIT_ASKPASS_MAIN} */
+export const VSCODE_GIT_ASKPASS_MAIN = "/Applications/Visual Studio Code.app/Contents/Resources/app/extensions/git/dist/askpass-main.js";
+
+/** @type {import('$env/static/private').npm_config_cache} */
+export const npm_config_cache = "/Users/ROMAIN/.npm";
+
+/** @type {import('$env/static/private').LOGNAME} */
+export const LOGNAME = "ROMAIN";
+
+/** @type {import('$env/static/private').LESS} */
+export const LESS = "-R";
+
+/** @type {import('$env/static/private').npm_lifecycle_script} */
+export const npm_lifecycle_script = "vite dev";
+
+/** @type {import('$env/static/private').npm_config_ghp_lxuhbwe0ewc8llnucj6odu6fm92rzh4lkkid} */
+export const npm_config_ghp_lxuhbwe0ewc8llnucj6odu6fm92rzh4lkkid = "";
+
+/** @type {import('$env/static/private').VSCODE_GIT_IPC_HANDLE} */
+export const VSCODE_GIT_IPC_HANDLE = "/var/folders/wt/t42rpbt56r3_jf1nmktzfbj80000gp/T/vscode-git-a2c6fd0a74.sock";
+
+/** @type {import('$env/static/private').NVM_BIN} */
+export const NVM_BIN = "/Users/ROMAIN/.nvm/versions/node/v16.14.0/bin";
+
+/** @type {import('$env/static/private').LERNA_PACKAGE_NAME} */
+export const LERNA_PACKAGE_NAME = "workshop-01";
+
+/** @type {import('$env/static/private').npm_config_user_agent} */
+export const npm_config_user_agent = "npm/8.3.1 node/v16.14.0 darwin x64 workspaces/false";
+
+/** @type {import('$env/static/private').VSCODE_GIT_ASKPASS_NODE} */
+export const VSCODE_GIT_ASKPASS_NODE = "/Applications/Visual Studio Code.app/Contents/Frameworks/Code Helper.app/Contents/MacOS/Code Helper";
+
+/** @type {import('$env/static/private').GIT_ASKPASS} */
+export const GIT_ASKPASS = "/Applications/Visual Studio Code.app/Contents/Resources/app/extensions/git/dist/askpass.sh";
+
+/** @type {import('$env/static/private').npm_node_execpath} */
+export const npm_node_execpath = "/Users/ROMAIN/.nvm/versions/node/v16.14.0/bin/node";
+
+/** @type {import('$env/static/private').npm_config_prefix} */
+export const npm_config_prefix = "/Users/ROMAIN/.nvm/versions/node/v16.14.0";
+
+/** @type {import('$env/static/private').COLORTERM} */
+export const COLORTERM = "truecolor";
