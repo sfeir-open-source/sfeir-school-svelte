@@ -5,7 +5,7 @@
   "scripts": {
     "start:server": "json-server --port 4000 -q --watch ./data/people.json",
     "start:sfeir-people": "npm run start:server & nx start sfeir-people",
-    "start:1": "nx start workshop-01"
+    "start:w-1": "nx start workshop-01"
   },
   "private": true,
   "dependencies": {
@@ -13,9 +13,17 @@
   },
   "devDependencies": {
     "@nrwl/cli": "14.5.6",
+    "@nrwl/eslint-plugin-nx": "14.5.4",
     "@nrwl/workspace": "14.5.6",
     "@sveltejs/adapter-auto": "next",
     "@sveltejs/kit": "next",
+    "@tsconfig/svelte": "^3.0.0",
+    "@typescript-eslint/eslint-plugin": "^5.33.0",
+    "@typescript-eslint/parser": "^5.33.0",
+    "eslint": "^8.21.0",
+    "eslint-config-prettier": "^8.3.0",
+    "eslint-plugin-cypress": "^2.10.3",
+    "eslint-plugin-svelte3": "^4.0.0",
     "nx": "14.5.6",
     "prettier": "^2.6.2",
     "prettier-plugin-svelte": "^2.5.0",
@@ -24,14 +32,7 @@
     "svelte-preprocess": "^4.10.6",
     "tslib": "^2.3.1",
     "typescript": "^4.7.4",
-    "vite": "^3.0.0",
-    "eslint": "^8.21.0",
-		"eslint-config-prettier": "^8.3.0",
-		"eslint-plugin-cypress": "^2.10.3",
-		"eslint-plugin-svelte3": "^4.0.0",
-    "@typescript-eslint/eslint-plugin": "^5.33.0",
-		"@typescript-eslint/parser": "^5.33.0",
-    "@nrwl/eslint-plugin-nx": "14.5.4"
+    "vite": "^3.0.0"
   },
   "workspaces": [
     "packages/**"

@@ -1,15 +1,13 @@
-<script>
-	import logo from '../../../common/images/Header.logo.svg';
-</script>
-
 <script lang="ts">
+  // @ts-ignore
+  import logo from '../../common/images/Header.logo.svg';
   export const MESSAGE = "Svelte @ Sfeir !";
 </script>
 
 <nav class="navbar is-dark" aria-label="main navigation">
 	<div class="navbar-brand">
 		<a class="navbar-item" href="/#">
-			<img src={logo} width="112" height="28" alt="sfeir logo" />
+			<img src={logo} alt="sfeir logo" />
 		</a>
 	</div>
 </nav>
@@ -19,7 +17,7 @@
 		<div class="card">
 			<div class="card-content">
 				<p class="title">
-					{message}
+          {MESSAGE}
 				</p>
 			</div>
 		</div>

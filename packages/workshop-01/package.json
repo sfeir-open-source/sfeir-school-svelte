@@ -1,7 +1,8 @@
 {
-	"name": "workshop-01",
-	"scripts": {
-		"start": "vite dev"
-	},
-	"type": "module"
+  "name": "workshop-01",
+  "version": "0.0.0",
+  "type": "module",
+  "scripts": {
+    "start": "vite"
+  }
 }
