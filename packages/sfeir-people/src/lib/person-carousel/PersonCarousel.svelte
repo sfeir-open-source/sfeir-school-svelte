@@ -16,7 +16,7 @@
 </script>
 
 <div class="carousel {$$props.class || ''}">
-	<button class="button  is-link" on:click={() => (index = prev(index))}>
+	<button class="button is-link" on:click={() => (index = prev(index))}>
 		<span class="icon">
 			<i class="fa-solid fa-arrow-left fa-lg" />
 		</span>
@@ -28,7 +28,7 @@
 		{/each}
 	</div>
 
-	<button class="button  is-link" on:click={() => (index = next(index))}>
+	<button class="button is-link" on:click={() => (index = next(index))}>
 		<span class="icon">
 			<i class="fa-solid fa-arrow-right fa-lg" />
 		</span>
