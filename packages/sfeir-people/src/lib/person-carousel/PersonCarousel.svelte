@@ -15,14 +15,11 @@
 	].map(({ className, index }) => ({ className, person: people[index] }));
 </script>
 
-<div class="carousel {$$props.class || ""}">
-	<button
-  class="button  is-link"
-		on:click={() => (index = prev(index))}
-	>
-  <span class="icon">
-    <i class="fa-solid fa-arrow-left fa-lg" />
-  </span>
+<div class="carousel {$$props.class || ''}">
+	<button class="button  is-link" on:click={() => (index = prev(index))}>
+		<span class="icon">
+			<i class="fa-solid fa-arrow-left fa-lg" />
+		</span>
 	</button>
 
 	<div class="cards">
@@ -31,13 +28,10 @@
 		{/each}
 	</div>
 
-	<button
-  class="button  is-link"
-		on:click={() => (index = next(index))}
-	>
-  <span class="icon">
-    <i class="fa-solid fa-arrow-right fa-lg" />
-  </span>
+	<button class="button  is-link" on:click={() => (index = next(index))}>
+		<span class="icon">
+			<i class="fa-solid fa-arrow-right fa-lg" />
+		</span>
 	</button>
 </div>
 
@@ -45,8 +39,8 @@
 	.carousel {
 		display: flex;
 		align-items: center;
-    padding: 3rem 0;
-    min-height: 320px;
+		padding: 3rem 0;
+		min-height: 320px;
 	}
 
 	.cards {
