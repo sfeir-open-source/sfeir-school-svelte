@@ -1,21 +1,19 @@
 <script lang="ts">
-  export let iconName: string;
+	export let iconName: string;
 </script>
 
 <p>
-  <i
-    class="material-icons"
-  >
-    {iconName}
-  </i>
-  &nbsp;
-  <slot />
+	<span class="icon">
+		<i class="fa-solid fa-{iconName}" />
+	</span>
+	&nbsp;
+	<slot />
 </p>
 
 <style>
-  p {
-    margin: 0;
-    display: flex;
-    margin-bottom: 4px
-  }
+	p {
+		margin: 0;
+		display: flex;
+		margin-bottom: 4px;
+	}
 </style>

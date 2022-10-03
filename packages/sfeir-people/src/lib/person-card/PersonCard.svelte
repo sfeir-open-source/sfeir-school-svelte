@@ -17,7 +17,7 @@
 			<span slot="subtitle">{person.position}</span>
 		</PersonCardHeader>
 
-		<PersonCardInfo iconName="email">
+		<PersonCardInfo iconName="envelope">
 			<a href={`mailto:${person.email}`}>{person.email}</a>
 		</PersonCardInfo>
 
@@ -26,7 +26,7 @@
 		</PersonCardInfo>
 
 		{#if person.managerId !== ''}
-			<PersonCardInfo iconName="supervisor_account">
+			<PersonCardInfo iconName="user-group">
 				<a href={`/person/${person.managerId}`}>{person.manager}</a>
 			</PersonCardInfo>
 		{/if}

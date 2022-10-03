@@ -5,7 +5,7 @@
 
 <div class="media">
   <div class="media-left">
-    <figure class="image is-64x64">
+    <figure class="image is-96x96">
       <img src={photo} alt="Face of {name}">
     </figure>
   </div>
@@ -14,3 +14,9 @@
     <p class="subtitle is-6"><slot name="subtitle"/></p>
   </div>
 </div>
+
+<style>
+  img {
+    border-radius: 50%;
+  }
+</style>

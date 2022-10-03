@@ -1,25 +1,11 @@
 <script lang="ts">
+  // Use logo directly in img src
   // @ts-ignore
   import logo from '../../common/images/Header.logo.svg';
+
+  // Props to pass to Card component
   export const MESSAGE = "Svelte @ Sfeir !";
 </script>
 
-<nav class="navbar is-dark" aria-label="main navigation">
-	<div class="navbar-brand">
-		<a class="navbar-item" href="/#">
-			<img src={logo} alt="sfeir logo" />
-		</a>
-	</div>
-</nav>
-
-<section class="section">
-	<div class="container">
-		<div class="card">
-			<div class="card-content">
-				<p class="title">
-          {MESSAGE}
-				</p>
-			</div>
-		</div>
-	</div>
-</section>
+<!-- Use ./__templates__/App.html -->
+<!-- You should create two components: Header & Card -->
