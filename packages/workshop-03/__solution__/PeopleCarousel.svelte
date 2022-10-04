@@ -1,5 +1,5 @@
 <script lang="ts">
-	import PersonCard from '$sfeirpeople/lib/person-card/PersonCard.svelte';
+	import PersonCard from './../../common/components/person-card/PersonCard.svelte';
 	import { range } from '../../common/utils';
 
 	export let people = [];

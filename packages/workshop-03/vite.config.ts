@@ -7,10 +7,5 @@ export default defineConfig({
 	plugins: [svelte()],
 	server: {
 		port: 3000
-	},
-	resolve: {
-		alias: {
-			$sfeirpeople: path.resolve(__dirname, './../sfeir-people/src/')
-		}
 	}
 });
