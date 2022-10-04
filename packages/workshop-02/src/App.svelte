@@ -14,12 +14,19 @@
 <section class="section">
 	<div class="container">
 		<div class="columns is-centered">
+
 			<div class="column is-half">
+        <p class="has-text-centered">Component to Implement</p><br/>
+
 				<PersonCard person={randomPerson} />
 			</div>
+
 			<div class="column is-half">
+        <p class="has-text-centered">Model</p><br/>
+
 				<PersonCardModel />
 			</div>
+
 		</div>
 	</div>
 </section>
