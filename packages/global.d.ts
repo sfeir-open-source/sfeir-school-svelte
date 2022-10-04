@@ -8,7 +8,7 @@ type Person = {
 	photo: string;
 	managerId: string;
 	manager: string;
-	gender: 'm' | 'f' | 'o';
+	gender: string;
 };
 
 type People = Person[];
