@@ -49,6 +49,8 @@
 	.carousel {
 		display: flex;
 		align-items: center;
+    justify-content: center;
+    gap: 2rem;
 		padding: 3rem 0;
 		min-height: 320px;
 	}
@@ -56,7 +58,6 @@
 	.slides {
 		position: relative;
 		z-index: 0;
-		flex-grow: 1;
 		display: flex;
 		justify-content: center;
 	}
