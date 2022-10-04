@@ -1,6 +1,6 @@
 <script lang="ts">
 	import Header from '$sfeirpeople/lib/header/Header.svelte';
-  import Carousel from './Carousel.svelte';
+  import PeopleCarousel from './PeopleCarousel.svelte';
 
 	import data from './../../../data/people.json';
 </script>
@@ -8,5 +8,5 @@
 <Header />
 
 <section class="section">
-  <Carousel people={data.people} />
+  <PeopleCarousel people={data.people} />
 </section>
