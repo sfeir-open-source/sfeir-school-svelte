@@ -26,16 +26,9 @@
 	</button>
 
 	<div class="slides">
-		{#each people as person, index}
-			<div
-				class="slide"
-				class:prev={index === prevIndex}
-				class:current={index === currIndex}
-				class:next={index === nextIndex}
-			>
-				<PersonCard {person} />
-			</div>
-		{/each}
+    <PersonCard person={people[prevIndex]} class="prev"/>
+    <PersonCard person={people[currIndex]} class="current"/>
+    <PersonCard person={people[nextIndex]} class="next"/>
 	</div>
 
 	<button class="button is-link" on:click={handleNext}>
@@ -62,7 +55,7 @@
 		justify-content: center;
 	}
 
-	.slide {
+	.slides > :global(.card) {
 		margin: 0;
 		display: none;
 		top: 0;
@@ -70,18 +63,18 @@
 		min-height: 16rem;
 	}
 
-	.slide.current,
-	.slide.prev,
-	.slide.next {
+	.slides > :global(.card.current),
+	.slides > :global(.card.prev),
+	.slides > :global(.card.next) {
 		display: initial;
 		transition: transform 0.5s ease;
 	}
-	.slide.prev {
+	.slides > :global(.card.prev) {
 		transform: scale(0.6) translateY(150px);
 		z-index: -1;
 		position: absolute;
 	}
-	.slide.next {
+	.slides > :global(.card.next) {
 		transform: scale(0.6) translateY(-150px);
 		z-index: -1;
 		position: absolute;

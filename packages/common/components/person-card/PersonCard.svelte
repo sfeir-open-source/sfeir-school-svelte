@@ -3,10 +3,13 @@
 	import PersonCardInfo from './person-card-info/PersonCardInfo.svelte';
 	import Card from '../../../common/components/Card.svelte';
 
+  let className: string = "";
+
+  export { className as class };
 	export let person: Person;
 </script>
 
-<Card>
+<Card class={className}>
 	<PersonCardHeader photo={person.photo}>
 		<a slot="title" href={`/person/${person.id}`}>{person.firstname} {person.lastname}</a>
 		<span slot="subtitle">{person.position}</span>

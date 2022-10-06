@@ -1,4 +1,10 @@
-<div class="card">
+<script>
+  let className = "";
+
+  export { className as class }
+</script>
+
+<div class="card {className}">
 	<div class="card-content">
 		<slot />
 	</div>

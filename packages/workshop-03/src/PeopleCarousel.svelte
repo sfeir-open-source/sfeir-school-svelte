@@ -1,9 +1,10 @@
 <script lang="ts">
 	import PersonCard from './../../common/components/person-card/PersonCard.svelte';
+	import { range } from '../../common/utils';
 
 	export let people = [];
 
-	// cycle through the people array when clicking the previous
+  // todo : cycle through the people array when clicking the previous
 	// and the next buttons. Look in ../../commons/utils.js for some utility
 	// functions you may need.
 </script>
@@ -16,15 +17,9 @@
 	</button>
 
 	<div class="slides">
-		<div class="slide prev">
-			<PersonCard person={people[0]} />
-		</div>
-		<div class="slide current">
-			<PersonCard person={people[1]} />
-		</div>
-		<div class="slide next">
-			<PersonCard person={people[2]} />
-		</div>
+    <PersonCard person={people[0]} class="prev"/>
+    <PersonCard person={people[1]} class="current"/>
+    <PersonCard person={people[2]} class="next"/>
 	</div>
 
 	<button class="button is-link">
@@ -51,7 +46,7 @@
 		justify-content: center;
 	}
 
-	.slide {
+	.slides > :global(.card) {
 		margin: 0;
 		display: none;
 		top: 0;
@@ -59,18 +54,18 @@
 		min-height: 16rem;
 	}
 
-	.slide.current,
-	.slide.prev,
-	.slide.next {
+	.slides > :global(.card.current),
+	.slides > :global(.card.prev),
+	.slides > :global(.card.next) {
 		display: initial;
 		transition: transform 0.5s ease;
 	}
-	.slide.prev {
+	.slides > :global(.card.prev) {
 		transform: scale(0.6) translateY(150px);
 		z-index: -1;
 		position: absolute;
 	}
-	.slide.next {
+	.slides > :global(.card.next) {
 		transform: scale(0.6) translateY(-150px);
 		z-index: -1;
 		position: absolute;
