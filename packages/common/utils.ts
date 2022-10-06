@@ -4,8 +4,8 @@ export const range = (min: number, max: number) => ({
 });
 
 export const nameContains = (query: string) => {
-  const re = new RegExp(query, "i");
-  return (p: Person) => re.test(p.firstname) || re.test(p.lastname);
+	const re = new RegExp(query, 'i');
+	return (p: Person) => re.test(p.firstname) || re.test(p.lastname);
 };
 
 export const loadPeople = (): Promise<People> =>

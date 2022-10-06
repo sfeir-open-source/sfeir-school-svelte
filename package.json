@@ -15,7 +15,8 @@
     "start:w-5:nx-start": "nx start workshop-05",
     "start:w-5": "run-p start:server start:w-5:nx-start",
     "start:w-6:nx-start": "nx start workshop-06",
-    "start:w-6": "run-p start:server start:w-6:nx-start"
+    "start:w-6": "run-p start:server start:w-6:nx-start",
+    "start:w-7": "npm run start:server & nx start workshop-07"
   },
   "private": true,
   "dependencies": {

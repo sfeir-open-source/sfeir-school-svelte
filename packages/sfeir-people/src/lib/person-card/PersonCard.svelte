@@ -1,4 +1,6 @@
 <script lang="ts">
+	import { createEventDispatcher } from 'svelte';
+
 	import PersonCardHeader from './person-card-header/PersonCardHeader.svelte';
 	import PersonCardInfo from './person-card-info/PersonCardInfo.svelte';
 	import Card from './../card/Card.svelte';
@@ -8,6 +10,8 @@
   export { className as class };
 	export let person: Person;
   export let isEditable: boolean = false;
+
+	const dispatch = createEventDispatcher();
 </script>
 
 <Card class={className}>
