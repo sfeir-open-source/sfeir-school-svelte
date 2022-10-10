@@ -1,5 +1,5 @@
 {
   "extends": "../../config/tsconfig.json",
-  "include": ["src/**/*.svelte", "__solution__/**/*.svelte", "../global.d.ts", "../common/**/*.svelte", "../common/**/*.ts"],
+  "include": ["src/**/*.svelte", "__solution__/**/*.svelte", "../global.d.ts"],
 }
 
