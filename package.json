@@ -6,7 +6,8 @@
     "start:server": "json-server --port 4000 -q --watch ./data/people.json",
     "start:sfeir-people": "npm run start:server & nx start sfeir-people",
     "start:w-1": "nx start workshop-01",
-    "start:w-2": "nx start workshop-02"
+    "start:w-2": "nx start workshop-02",
+    "start:w-3": "nx start workshop-03"
   },
   "private": true,
   "dependencies": {

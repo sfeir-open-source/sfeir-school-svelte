@@ -1,4 +1,9 @@
-<div class="card {$$props.class || ''}">
+<script lang="ts">
+  let className: string = "";
+  export { className as class};
+</script>
+
+<div class="card {className}">
 	<div class="card-content">
 		<slot />
 	</div>

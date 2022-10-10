@@ -1,13 +1,12 @@
 <script lang="ts">
 	import PersonCardHeader from './person-card-header/PersonCardHeader.svelte';
 	import PersonCardInfo from './person-card-info/PersonCardInfo.svelte';
-	import Card from './../card/Card.svelte';
+	import Card from '../../../common/components/Card.svelte';
 
   let className: string = "";
 
   export { className as class };
 	export let person: Person;
-  export let isEditable: boolean = false;
 </script>
 
 <Card class={className}>
@@ -29,10 +28,4 @@
 			<a href={`/person/${person.managerId}`}>{person.manager}</a>
 		</PersonCardInfo>
 	{/if}
-
-  <svelte:fragment slot="footer">
-		{#if isEditable}
-			<a href={`/person/${person.id}/edit`} class="card-footer-item"> Edit information </a>
-		{/if}
-	</svelte:fragment>
 </Card>
