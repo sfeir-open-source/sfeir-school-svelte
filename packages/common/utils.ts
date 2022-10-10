@@ -3,6 +3,11 @@ export const range = (min: number, max: number) => ({
 	prev: (x: number): number => (x === min ? max : x - 1)
 });
 
+export const nameContains = (query: string) => {
+  const re = new RegExp(query, "i");
+  return (p: Person) => re.test(p.firstname) || re.test(p.lastname);
+};
+
 export const loadPeople = (): Promise<People> =>
 	fetch('http://localhost:4000/people').then((res) => res.json());
 

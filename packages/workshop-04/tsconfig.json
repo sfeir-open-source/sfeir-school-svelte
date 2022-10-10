@@ -1,0 +1,12 @@
+{
+  "extends": "../../config/tsconfig.json",
+  "compilerOptions": {
+		"baseUrl": ".",
+    "paths": {
+      "$common": ["../common"],
+			"$common/*": ["../common/*"]
+		}
+	},
+  "include": ["src/**/*.svelte", "__solution__/**/*.svelte", "../global.d.ts"]
+}
+
