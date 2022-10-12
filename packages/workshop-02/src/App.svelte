@@ -1,5 +1,5 @@
 <script lang="ts">
-	import Header from '../../common/components/Header.svelte';
+	import Header from '../../common/components/header/Header.svelte';
 	import { people } from '../../../data/people.json';
 
 	import PersonCardModel from './PersonCardModel.svelte';
