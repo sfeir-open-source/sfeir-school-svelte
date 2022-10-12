@@ -1,15 +1,11 @@
 <script lang="ts">
+  import { nameContains } from '$common/utils';
 	import TextField from '$lib/form/TextField.svelte';
 	import PersonCard from '$lib/person-card/PersonCard.svelte';
 
 	export let people: People = undefined;
 
 	let query = '';
-
-	const nameContains = (query: string) => {
-		const re = new RegExp(query, 'i');
-		return (p: Person): boolean => re.test(p.firstname) || re.test(p.lastname);
-	};
 
 	$: filteredPeople = people.filter(nameContains(query));
 </script>

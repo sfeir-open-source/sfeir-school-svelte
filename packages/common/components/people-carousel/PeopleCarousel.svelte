@@ -1,6 +1,6 @@
 <script lang="ts">
-	import PersonCard from './../../common/components/person-card/PersonCard.svelte';
-	import { range } from '../../common/utils';
+	import PersonCard from '../person-card/PersonCard.svelte';
+	import { range } from '../../utils';
 
 	export let people = [];
 
@@ -8,6 +8,12 @@
 
 	$: prevIndex = range(0, people.length - 1).prev(currIndex);
 	$: nextIndex = range(0, people.length - 1).next(currIndex);
+
+  $: slides = [
+		[people[prevIndex], 'prev'],
+		[people[currIndex], 'current'],
+		[people[nextIndex], 'next']
+	];
 
 	const handleNext = () => {
 		currIndex = range(0, people.length - 1).next(currIndex);
@@ -18,7 +24,7 @@
 	};
 </script>
 
-<div class="carousel">
+<div class="carousel mt-4">
 	<button class="button is-link" on:click={handlePrev}>
 		<span class="icon">
 			<i class="fa-solid fa-arrow-left fa-lg" />
@@ -26,9 +32,9 @@
 	</button>
 
 	<div class="slides">
-		<PersonCard person={people[prevIndex]} class="prev" />
-		<PersonCard person={people[currIndex]} class="current" />
-		<PersonCard person={people[nextIndex]} class="next" />
+		{#each slides as [person, className] (person.id)}
+	    <PersonCard person={person} class={className}/>
+    {/each}
 	</div>
 
 	<button class="button is-link" on:click={handleNext}>
@@ -42,8 +48,8 @@
 	.carousel {
 		display: flex;
 		align-items: center;
-		justify-content: center;
-		gap: 2rem;
+    justify-content: center;
+    gap: 2rem;
 		padding: 3rem 0;
 		min-height: 320px;
 	}

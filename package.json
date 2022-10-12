@@ -7,7 +7,8 @@
     "start:sfeir-people": "npm run start:server & nx start sfeir-people",
     "start:w-1": "nx start workshop-01",
     "start:w-2": "nx start workshop-02",
-    "start:w-3": "nx start workshop-03"
+    "start:w-3": "nx start workshop-03",
+    "start:w-4": "nx start workshop-04"
   },
   "private": true,
   "dependencies": {
