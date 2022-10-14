@@ -32,7 +32,7 @@
 			to switch between with "CurrentView"
 			<br />
 			<br />
-			Note: ListPage & CarouselPage should have props, use people store instead in them.
+			Note: ListPage & CarouselPage should not have props, use people store instead in them.
 		</p>
 	{/if}
 </div>
