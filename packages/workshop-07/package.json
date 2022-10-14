@@ -1,0 +1,8 @@
+{
+  "name": "workshop-07",
+  "version": "0.0.0",
+  "type": "module",
+  "scripts": {
+    "start": "vite"
+  }
+}

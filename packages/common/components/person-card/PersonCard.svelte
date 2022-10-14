@@ -1,15 +1,17 @@
 <script lang="ts">
+  import { createEventDispatcher } from 'svelte';
+
 	import PersonCardHeader from './person-card-header/PersonCardHeader.svelte';
 	import PersonCardInfo from './person-card-info/PersonCardInfo.svelte';
-	import Card from '../../../common/components/Card.svelte';
+	import Card from '../Card.svelte';
 
-  let className: string = "";
-
-  export { className as class };
 	export let person: Person;
+  export let isEditable: boolean = false;
+
+  const dispatch = createEventDispatcher();
 </script>
 
-<Card class={className}>
+<Card>
 	<PersonCardHeader photo={person.photo}>
 		<a slot="title" href={`/person/${person.id}`}>{person.firstname} {person.lastname}</a>
 		<span slot="subtitle">{person.position}</span>
@@ -28,4 +30,12 @@
 			<a href={`/person/${person.managerId}`}>{person.manager}</a>
 		</PersonCardInfo>
 	{/if}
+
+  <svelte:fragment slot="footer">
+		{#if isEditable}
+    <div class="card-footer-item">
+			<button class="button is-ghost" on:click={() => dispatch('edit')}> Edit information </button>
+    </div>
+		{/if}
+	</svelte:fragment>
 </Card>

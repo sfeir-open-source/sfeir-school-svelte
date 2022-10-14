@@ -13,7 +13,7 @@
 <div class="columns is-multiline margin-medium mt-4">
 	{#each filteredPeople as person}
 		<div class="column is-4">
-			<PersonCard {person} />
+			<PersonCard {person} isEditable={true} />
 		</div>
 	{/each}
 </div>

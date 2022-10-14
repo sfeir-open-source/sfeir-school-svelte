@@ -33,7 +33,7 @@
 
 	<div class="slides">
 		{#each slides as [person, className] (person.id)}
-	    <PersonCard person={person} class={className}/>
+	    <PersonCard person={person} class={className} />
     {/each}
 	</div>
 
