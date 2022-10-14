@@ -1,32 +1,43 @@
 <script lang="ts">
-	import Header from '../../common/components/Header.svelte';
-	import { people } from '../../../data/people.json';
+	import { onMount } from 'svelte';
 
-	import PersonCardModel from './PersonCardModel.svelte';
-	import PersonCard from './person-card/PersonCard.svelte';
-	// import PersonCard from '../__solution__/person-card/PersonCard.svelte';
+	import Header from '$common/components/Header.svelte';
+	import Loader from '$common/components/Loader.svelte';
+	import PersonCard from '$common/components/person-card/PersonCard.svelte';
+	import PersonForm from './PersonForm.svelte';
 
-	const randomPerson: Person = people[Math.floor(Math.random() * people.length)];
+	import { loadPeople, savePerson } from '$common/utils';
+	let editing: boolean = false;
+	let person;
+
+	onMount(async () => {
+		person = await loadPeople().then((people) => people[Math.floor(Math.random() * people.length)]);
+	});
 </script>
 
 <Header />
 
 <section class="section">
-	<div class="container">
-		<div class="columns is-centered">
+	<br />
+	<br />
+	<p class="has-text-centered">
+		Update the <strong>PersonForm</strong> component using events to update the
+		<strong>person</strong>
+		object<br />
+		On submit, update the person using <strong>savePerson</strong> method
+	</p>
+	<br />
+	<p class="has-text-centered">
+		Finally replace the events with two way binding to manage the form data
+	</p>
+	<br />
+	<br />
 
-			<div class="column is-half">
-        <p class="has-text-centered">Component to Implement</p><br/>
-
-				<PersonCard person={randomPerson} />
-			</div>
-
-			<div class="column is-half">
-        <p class="has-text-centered">Model</p><br/>
-
-				<PersonCardModel />
-			</div>
-
-		</div>
-	</div>
+	{#if !person}
+		<Loader class="mt-6" />
+	{:else if editing}
+		<PersonForm {person} on:cancel={() => (editing = false)} />
+	{:else}
+		<PersonCard {person} isEditable={true} on:edit={() => (editing = true)} />
+	{/if}
 </section>
