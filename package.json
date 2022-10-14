@@ -3,7 +3,9 @@
   "version": "0.0.0",
   "license": "MIT",
   "scripts": {
-    "start:server": "json-server --port 4000 --delay 500 -q --watch ./data/people.json",
+    "start:server:clean": "rm -rf ./data/db.json && cp ./data/people.json ./data/db.json",
+    "state:server:json-server": "json-server --port 4000 --delay 500 -q --watch ./data/people.json",
+    "start:server": "run-p start:server:clean state:server:json-server",
     "start:sfeir-people:nx-start": "nx start sfeir-people",
     "start:sfeir-people": "run-p start:server start:sfeir-people:nx-start",
     "start:w-1": "nx start workshop-01",
