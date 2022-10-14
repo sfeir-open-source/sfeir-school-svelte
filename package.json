@@ -3,13 +3,19 @@
   "version": "0.0.0",
   "license": "MIT",
   "scripts": {
-    "start:server": "json-server --port 4000 --delay 500 -q --watch ./data/people.json",
-    "start:sfeir-people": "npm run start:server & nx start sfeir-people",
+    "start:server:clean": "rm -rf ./data/db.json && cp ./data/people.json ./data/db.json",
+    "state:server:json-server": "json-server --port 4000 --delay 500 -q --watch ./data/people.json",
+    "start:server": "run-p start:server:clean state:server:json-server",
+    "start:sfeir-people:nx-start": "nx start sfeir-people",
+    "start:sfeir-people": "run-p start:server start:sfeir-people:nx-start",
     "start:w-1": "nx start workshop-01",
     "start:w-2": "nx start workshop-02",
     "start:w-3": "nx start workshop-03",
     "start:w-4": "nx start workshop-04",
-    "start:w-5": "npm run start:server & nx start workshop-05"
+    "start:w-5:nx-start": "nx start workshop-05",
+    "start:w-5": "run-p start:server start:w-5:nx-start",
+    "start:w-6:nx-start": "nx start workshop-06",
+    "start:w-6": "run-p start:server start:w-6:nx-start"
   },
   "private": true,
   "dependencies": {
@@ -28,6 +34,7 @@
     "eslint-config-prettier": "^8.3.0",
     "eslint-plugin-cypress": "^2.10.3",
     "eslint-plugin-svelte3": "^4.0.0",
+    "npm-run-all": "^4.1.5",
     "nx": "14.5.6",
     "prettier": "^2.6.2",
     "prettier-plugin-svelte": "^2.5.0",
