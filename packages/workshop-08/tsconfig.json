@@ -1,0 +1,15 @@
+{
+	"extends": "../../tsconfig.base.json",
+	"compilerOptions": {
+		"baseUrl": ".",
+    "paths": {
+			"$lib": ["src/lib"],
+			"$lib/*": ["src/lib/*"],
+      "$common": ["../common"],
+			"$common/*": ["../common/*"],
+      "$w6": ["../workshop-06/__solution__"],
+			"$w6/*": ["../workshop-06/__solution__/*"]
+		}
+	},
+	"include": ["src/**/*.d.ts", "src/**/*.js", "src/**/*.ts", "src/**/*.svelte", "../global.d.ts"]
+}
