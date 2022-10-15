@@ -6,8 +6,7 @@ const config = {
 	plugins: [sveltekit()],
   resolve: {
 		alias: {
-			$common: path.resolve('../common'),
-      $w6: path.resolve('../workshop-06/__solution__'),
+			$common: path.resolve('../common')
 		}
 	},
   server: {
