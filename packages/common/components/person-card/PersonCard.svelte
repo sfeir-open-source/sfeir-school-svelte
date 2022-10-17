@@ -8,10 +8,13 @@
 	export let person: Person;
   export let isEditable: boolean = false;
 
+  let classNames: string = '';
+  export { classNames as class };
+
   const dispatch = createEventDispatcher();
 </script>
 
-<Card>
+<Card class={classNames}>
 	<PersonCardHeader photo={person.photo}>
 		<a slot="title" href={`/person/${person.id}`}>{person.firstname} {person.lastname}</a>
 		<span slot="subtitle">{person.position}</span>

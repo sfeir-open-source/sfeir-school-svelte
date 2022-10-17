@@ -17,7 +17,9 @@
     "start:w-6:nx-start": "nx start workshop-06",
     "start:w-6": "run-p start:server start:w-6:nx-start",
     "start:w-7:nx-start": "nx start workshop-07",
-    "start:w-7": "run-p start:server start:w-7:nx-start"
+    "start:w-7": "run-p start:server start:w-7:nx-start",
+    "start:w-8:nx-start": "nx start workshop-08",
+    "start:w-8": "run-p start:server start:w-8:nx-start"
   },
   "private": true,
   "dependencies": {
