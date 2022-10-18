@@ -2,6 +2,6 @@
 
 # **Les composants**
 
-## **Les bases, structure du fichier, props, composition**
+## **Les bases, structure du fichier, props**
 
 Notes:

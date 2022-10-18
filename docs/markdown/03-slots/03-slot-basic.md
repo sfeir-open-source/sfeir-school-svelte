@@ -29,13 +29,13 @@
 
 ```svelte
 <script>
-  export let city = 'Amsterdam';
+	export let city = 'Amsterdam';
 </script>
 
 <div>
-	<p class="message">Welcome to Sfeir School @ {city}! 😀</p>
+  <p class="message">Welcome to Sfeir School @ {city}! 😀</p>
 
-  </slot />
+  <slot />
 </div>
 
 <style>

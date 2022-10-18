@@ -31,36 +31,50 @@ function componentBaseSlides() {
 		'02-component-base/02-TITLE.md',
 		'02-component-base/02-component-file.md',
 		'02-component-base/02-props-nested.md',
-		'02-component-base/02-workshop-01.md',
-    '02-component-base/02-slot-basic.md',
-    '02-component-base/02-slot-named.md',
-		'02-component-base/02-workshop-02.md'
+		'02-component-base/02-workshop-01.md'
 	];
 }
 
-function componentMoreSlides() {
+function slotsSlides() {
 	return [
-		'03-component-more/03-TITLE.md',
-		'03-component-more/03-assignment.md',
-		'03-component-more/03-mutation.md',
-		'03-component-more/03-dollar.md',
-		'03-component-more/03-event.md',
-		'03-component-more/03-event-modifier.md',
-		'03-component-more/03-event-component.md',
-		'03-component-more/03-exercice.md'
+		'03-slots/03-TITLE.md',
+		'03-slots/03-slot-basic.md',
+		'03-slots/03-slot-named.md',
+		'03-slots/03-workshop-02.md'
 	];
+}
+
+function stateAndEventsSlides() {
+	return [
+		'04-state-and-events/04-TITLE.md',
+		'04-state-and-events/04-assignment.md',
+		'04-state-and-events/04-mutation.md',
+		'04-state-and-events/04-dollar.md',
+		'04-state-and-events/04-event.md',
+		'04-state-and-events/04-event-modifier.md',
+		'04-state-and-events/04-event-component.md',
+		'04-state-and-events/04-workshop-03.md'
+	];
+}
+
+function eachIfModifiers() {
+	return ['05-each-if-modifiers/05-TITLE.md', '05-each-if-modifiers/05-workshop-04.md'];
+}
+
+function lifecycles() {
+	return ['06-lifecycles/06-TITLE.md', '06-lifecycles/06-workshop-05.md'];
 }
 
 function storesSlides() {
-	return ['04-stores/04-TITLE.md'];
+	return ['07-stores/07-TITLE.md', '07-stores/07-workshop-06.md'];
 }
 
 function formSlides() {
-	return ['05-form/05-TITLE.md'];
+	return ['08-form/08-TITLE.md', '08-form/08-workshop-07.md'];
 }
 
 function svelteKitSlides() {
-	return ['06-sveltekit/06-TITLE.md'];
+	return ['09-sveltekit/09-TITLE.md', '09-sveltekit/09-workshop-08.md'];
 }
 
 function formation() {
@@ -69,7 +83,10 @@ function formation() {
 		...schoolSlides(), //
 		...svelteSlides(), //
 		...componentBaseSlides(), //
-		...componentMoreSlides(), //
+		...slotsSlides(), //
+    ...stateAndEventsSlides(), //
+		...eachIfModifiers(), //
+    ...lifecycles(), //
 		...storesSlides(), //
 		...formSlides(), //
 		...svelteKitSlides() //
