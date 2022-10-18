@@ -4,8 +4,6 @@
 
 ### Les events de composant
 
-Comment communiquer avec un composant parent ?
-
 ```svelte
 <script>
 	import { createEventDispatcher } from 'svelte';

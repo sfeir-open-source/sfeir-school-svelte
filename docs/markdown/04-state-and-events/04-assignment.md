@@ -1,10 +1,10 @@
 <!-- .slide: class="with-code-bg-dark" -->
 
-## L'affectation (=)
+## L'affectation
 
-Svelte utilise l'affectation pour synchroniser l'état du composant avec le DOM :
+### Synchronisation variable / DOM
 
-```svelte
+```svelte [1-11|5,11]
 <script>
 	let count = 0;
 
@@ -18,4 +18,4 @@ Svelte utilise l'affectation pour synchroniser l'état du composant avec le DOM 
 <div>Count : {count}</div>
 ```
 
-[Tous les opérateurs d'affectation](https://developer.mozilla.org/fr/docs/Web/JavaScript/Guide/Expressions_and_Operators#op%C3%A9rateurs_daffectation)
+[Les opérateurs d'affectation](https://developer.mozilla.org/fr/docs/Web/JavaScript/Guide/Expressions_and_Operators#op%C3%A9rateurs_daffectation)

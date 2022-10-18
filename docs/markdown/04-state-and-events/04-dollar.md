@@ -1,22 +1,24 @@
-<!-- .slide: class="with-code-bg-dark" -->
+<!-- .slide: class="with-code-bg-dark two-column" -->
 
 ## Le symbole "$"
 
-En plus du DOM, Svelte permet de synchroniser les variables entre elles, grâce au "$"
+Variables réactives
 
 ```svelte
 $: doubledCount = count * 2;
 ```
 
-<br/>Fonctions réactives
+##--##
 
-<!-- .element: class="fragment" data-fragment-index="1"-->
+Fonctions réactives
+
+<!-- .element: class="fragment" data-fragment-index="1" style="margin-top: 200px;"-->
 
 ```svelte
 $: console.log('Count: ' + count);
 ```
 
-<!-- .element: class="fragment" data-fragment-index="1"-->
+<!-- .element: class="fragment" data-fragment-index="1" -->
 
 ```svelte
 $: {

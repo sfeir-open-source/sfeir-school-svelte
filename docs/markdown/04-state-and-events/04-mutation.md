@@ -1,8 +1,9 @@
-<!-- .slide: class="with-code-bg-dark two-column" -->
+<!-- .slide: class="with-code-bg-dark" -->
 
-## Les mutations
+## L'affectation
 
-Les mutations de tableau ou d'objet ne sont pas considérées comme assignation : <br /> <br/>
+### Cas particulier : les mutations
+
 Pas OK
 
 ```javascript
@@ -20,7 +21,7 @@ function addPerson(person) {
 }
 ```
 
-Version ES6
+ES6
 
 <!-- .element: class="fragment" data-fragment-index="1"-->
 

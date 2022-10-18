@@ -1,8 +1,17 @@
-<!-- .slide: class="with-code-bg-dark" -->
+<!-- .slide: class="with-code-bg-dark two-column" -->
 
 ## Les events
 
 ### Les modifiers
+
+```svelte
+<form action="#" on:submit|preventDefault|once={handleSubmit}>
+	<input type="text" name="firstname" />
+	<button type="submit">Confirmer</button>
+</form>
+```
+
+##--##
 
 - `preventDefault`
 - `stopPropagation`
@@ -12,6 +21,8 @@
 - `once`
 - `self`
 - `trusted`
+
+<!-- .element style="margin-top: 120px;" -->
 
 Notes:
 

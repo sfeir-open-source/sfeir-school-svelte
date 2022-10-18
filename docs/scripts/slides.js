@@ -62,7 +62,15 @@ function eachIfModifiers() {
 }
 
 function lifecycles() {
-	return ['06-lifecycles/06-TITLE.md', '06-lifecycles/06-workshop-05.md'];
+	return [
+		'06-lifecycles/06-TITLE.md',
+		'06-lifecycles/06-onMount.md',
+		'06-lifecycles/06-apicall.md',
+		'06-lifecycles/06-update.md',
+		'06-lifecycles/06-onDestroy.md',
+		'06-lifecycles/06-tick.md',
+		'06-lifecycles/06-workshop-05.md'
+	];
 }
 
 function storesSlides() {
@@ -84,9 +92,9 @@ function formation() {
 		...svelteSlides(), //
 		...componentBaseSlides(), //
 		...slotsSlides(), //
-    ...stateAndEventsSlides(), //
+		...stateAndEventsSlides(), //
 		...eachIfModifiers(), //
-    ...lifecycles(), //
+		...lifecycles(), //
 		...storesSlides(), //
 		...formSlides(), //
 		...svelteKitSlides() //

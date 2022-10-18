@@ -2,6 +2,6 @@
 
 # **Les composants**
 
-## **Réactivité, state & events, list & condition, lifecycle**
+## **Réactivité, state & events**
 
 Notes:

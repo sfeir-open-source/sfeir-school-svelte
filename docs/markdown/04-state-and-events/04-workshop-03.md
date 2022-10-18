@@ -2,7 +2,7 @@
 
 # Workshop 03
 
-En utilisant les notions précédentes :
+Réactivité, state & events
 
 - Afficher trois cards people dans le carousel
 - Parcourir les personnes au clic sur les boutons du carousel
