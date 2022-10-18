@@ -16,11 +16,26 @@ function schoolSlides() {
 }
 
 function svelteSlides() {
-	return ['01-svelte-kezako/01-TITLE.md'];
+	return [
+		'01-svelte-kezako/01-TITLE.md',
+		'01-svelte-kezako/01-logo-rich-harris.md',
+		'01-svelte-kezako/01-compiler.md',
+		'01-svelte-kezako/01-dom-vs-virtual.md',
+		'01-svelte-kezako/01-lets-go.md',
+		'01-svelte-kezako/01-repl-link.md'
+	];
 }
 
 function componentBaseSlides() {
-	return ['02-component-base/02-TITLE.md'];
+	return [
+		'02-component-base/02-TITLE.md',
+		'02-component-base/02-component-file.md',
+		'02-component-base/02-props-nested.md',
+		'02-component-base/02-workshop-01.md',
+    '02-component-base/02-slot-basic.md',
+    '02-component-base/02-slot-named.md',
+		'02-component-base/02-workshop-02.md'
+	];
 }
 
 function componentMoreSlides() {

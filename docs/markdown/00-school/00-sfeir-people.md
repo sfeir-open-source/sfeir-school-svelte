@@ -1,5 +1,5 @@
 <!-- .slide: class="with-code-bg-dark" -->
 
-# Sfeir People
+<h1 style="margin-bottom: 4rem">Sfeir People</h1>
 
-TODO: insérer une capture de l'application
+<img class="h-800" src="./assets/images/sfeir-people-final-screenshot.png">
