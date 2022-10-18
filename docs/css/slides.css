@@ -1,17 +1,3 @@
-.exercice.small h1 {
-  margin: 6rem 0 !important;
-}
-.exercice.small ul,
-.exercice.small ol {
-  font-size: 2rem !important;
-}
 
-code.has-highlights table {
-  background-color: initial !important;
-  border: none !important;
-}
-code.has-highlights td {
-  border: none !important;
-}
 
 /*# sourceMappingURL=slides.css.map */

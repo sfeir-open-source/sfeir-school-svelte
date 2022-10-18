@@ -78,7 +78,16 @@ function storesSlides() {
 }
 
 function formSlides() {
-	return ['08-form/08-TITLE.md', '08-form/08-workshop-07.md'];
+	return [
+		'08-form/08-TITLE.md',
+		'08-form/08-text.md',
+		'08-form/08-checkbox.md',
+		'08-form/08-select.md',
+		'08-form/08-group.md',
+		'08-form/08-binding-component.md',
+		'08-form/08-this.md',
+		'08-form/08-this-component.md'
+	];
 }
 
 function svelteKitSlides() {
