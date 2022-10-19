@@ -2,4 +2,8 @@
 
 # Workshop 07
 
-TODO: person form (bind & onSubmit)
+Formulaires
+
+- Compléter le composant **PersonForm** en utilisant des événements
+- Appeler le serveur pour sauvegarder le formulaire
+- Enfin, remplacer les événements par le binding
