@@ -37,6 +37,7 @@
 	</div>
 </nav>
 
+<!-- Main content -->
 <div class="container pt-6">
   <br >
   <br >

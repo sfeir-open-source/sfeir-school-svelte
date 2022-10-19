@@ -57,11 +57,18 @@ function stateAndEventsSlides() {
 	];
 }
 
-function eachIfModifiers() {
-	return ['05-each-if-modifiers/05-TITLE.md', '05-each-if-modifiers/05-workshop-04.md'];
+function eachIfSlides() {
+	return [
+		'05-each-if/05-TITLE.md',
+		'05-each-if/05-if.md',
+		'05-each-if/05-if-else.md',
+		'05-each-if/05-if-else-if-else.md',
+    '05-each-if/05-each.md',
+    '05-each-if/05-each-keyed.md',
+		'05-each-if/05-workshop-04.md'
+	];
 }
-
-function lifecycles() {
+function lifecyclesSlides() {
 	return [
 		'06-lifecycles/06-TITLE.md',
 		'06-lifecycles/06-onMount.md',
@@ -103,8 +110,8 @@ function formation() {
 		...componentBaseSlides(), //
 		...slotsSlides(), //
 		...stateAndEventsSlides(), //
-		...eachIfModifiers(), //
-		...lifecycles(), //
+		...eachIfSlides(), //
+		...lifecyclesSlides(), //
 		...storesSlides(), //
 		...formSlides(), //
 		...svelteKitSlides() //
