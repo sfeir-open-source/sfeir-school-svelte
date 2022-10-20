@@ -2,6 +2,4 @@
 
 # **SvelteKit**
 
-## **Présentation, router, SSR, and more!**
-
 Notes:
