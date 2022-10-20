@@ -6,15 +6,14 @@
 
 ```svelte
 <script>
-	let canvasElement;
+	let inputElement;
 
-	const drawCircle = () => {
-		const ctx = canvasElement.getContext('2d');
-		ctx.beginPath();
-		ctx.arc(100, 75, 50, 0, 2 * Math.PI);
-		ctx.stroke();
+	const handleClick = () => {
+		inputElement.focus();
 	};
 </script>
 
-<canvas bind:this={canvasElement} on:click={drawCircle} />
+<button on:click={handleClick}> Focus </button>
+
+<input type="text" placeholder="Recherche" bind:this={inputElement} />
 ```

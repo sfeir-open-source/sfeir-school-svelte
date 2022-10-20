@@ -1,6 +1,6 @@
 <!-- .slide: class="with-code-bg-dark two-column" -->
 
-Binder une propriété de composant
+Props
 
 ```svelte
 <script>

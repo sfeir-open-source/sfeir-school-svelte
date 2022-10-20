@@ -5,13 +5,37 @@
 ### Les modifiers
 
 ```svelte
-<form action="#" on:submit|preventDefault|once={handleSubmit}>
+<script>
+	let hasSubmitted = false;
+
+	const handleSubmit = (event) => {
+		event.preventDefault();
+		if (hasSubmitted) return;
+		console.log('Le formulaire a été envoyé !');
+		hasSubmitted = true;
+	};
+</script>
+
+<form action="#" on:submit={handleSubmit}>
 	<input type="text" name="firstname" />
 	<button type="submit">Confirmer</button>
 </form>
 ```
 
 ##--##
+
+```svelte
+<script>
+	const handleSubmit = () => {
+		console.log('Le formulaire a été envoyé !');
+	};
+</script>
+
+<form action="#" on:submit|preventDefault|once={handleSubmit}>
+	<input type="text" name="firstname" />
+	<button type="submit">Confirmer</button>
+</form>
+```
 
 - `preventDefault`
 - `stopPropagation`
@@ -22,7 +46,7 @@
 - `self`
 - `trusted`
 
-<!-- .element style="margin-top: 120px;" -->
+<!-- .element style="margin-top: 40px;" -->
 
 Notes:
 

@@ -6,31 +6,38 @@ Instance de composant
 
 ```svelte
 <script>
-	import CanvasComponent from './CanvasComponent.svelte';
-	let canvas;
+	import TextField from './TextField.svelte';
+
+	let field;
 </script>
 
-<CanvasComponent bind:this={canvas} />
-<div><button on:click={canvas.drawCircle}>Dessiner un cercle</button></div>
+<TextField bind:this={field} />
+
+<button on:click={field.validate}> Valider </button>
 ```
 
 ##--##
 
-CanvasComponent.svelte
+TextField.svelte
 
 <!-- .element style="margin-top: 200px;" -->
 
-```svelte [4]
+```svelte [1-17|5]
 <script>
-	let canvasElement;
+	let value = '';
+	let error = '';
 
-	export const drawCircle = () => {
-		const ctx = canvasElement.getContext('2d');
-		ctx.beginPath();
-		ctx.arc(100, 75, 50, 0, 2 * Math.PI);
-		ctx.stroke();
+	export const validate = () => {
+		if (!value) error = 'Ce champs est requis';
+		else if (value.length < 5) '5 Caractères minimum';
+		else error = '';
 	};
 </script>
 
-<canvas bind:this={canvasElement} />
+<div>
+	<input type="text" placeholder="Prénom" bind:value />
+	{#if error}
+		<p>{error}</p>
+	{/if}
+</div>
 ```

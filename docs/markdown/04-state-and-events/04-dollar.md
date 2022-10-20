@@ -21,8 +21,15 @@ $: console.log('Count: ' + count);
 <!-- .element: class="fragment" data-fragment-index="1" -->
 
 ```svelte
+$: if (count > 10) count = 0;
+```
+
+<!-- .element: class="fragment" data-fragment-index="1"-->
+
+```svelte
 $: {
   if (count > 10) count = 0;
+  console.log('Count: ' + count);
 }
 ```
 

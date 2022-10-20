@@ -9,7 +9,13 @@
 	import { createEventDispatcher } from 'svelte';
 
 	const dispatch = createEventDispatcher();
+
+	const handleInput = (e) => {
+		dispatch('inputChanged', e.target.value);
+	};
 </script>
+
+<input type="text" on:input={handleInput} />
 ```
 
 Notes:

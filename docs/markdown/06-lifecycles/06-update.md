@@ -16,4 +16,6 @@
 </script>
 ```
 
-[Cas d'exemple sur ce REPL]()
+Notes :
+
+Repl : https://svelte.dev/repl/0db658fcd5ff418fa2954d80b173b6c4?version=3.52.0
