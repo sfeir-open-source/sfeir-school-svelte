@@ -17,7 +17,7 @@ Radio
 	</label>
 {/each}
 
-{#if size}
+{#if selectedSize}
 	<p>Vous avez choisi une {selectedSize} pizza</p>
 {:else}
 	<p>Veuillez sélectionner une taille de pizza</p>

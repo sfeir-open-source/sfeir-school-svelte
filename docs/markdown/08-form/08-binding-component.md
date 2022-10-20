@@ -8,8 +8,8 @@ Props
 	let pizzaSupplements = [];
 </script>
 
-<PizzaSizeSelector bind:value={pizzaSize} />
-<PizzaSupplementSelector bind:value={pizzaSupplements} />
+<PizzaSizeSelector bind:selectedSize={pizzaSize} />
+<PizzaSupplementSelector bind:selectedSupplements={pizzaSupplements} />
 ```
 
 ##--##
@@ -29,7 +29,7 @@ PizzaSizeSelector.svelte
 	</label>
 {/each}
 
-{#if size}
+{#if selectedSize}
 	<p>Vous avez choisi une {selectedSize} pizza</p>
 {:else}
 	<p>Veuillez sélectionner une taille de pizza</p>
