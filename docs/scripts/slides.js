@@ -63,8 +63,8 @@ function eachIfSlides() {
 		'05-each-if/05-if.md',
 		'05-each-if/05-if-else.md',
 		'05-each-if/05-if-else-if-else.md',
-    '05-each-if/05-each.md',
-    '05-each-if/05-each-keyed.md',
+		'05-each-if/05-each.md',
+		'05-each-if/05-each-keyed.md',
 		'05-each-if/05-workshop-04.md'
 	];
 }
@@ -81,7 +81,13 @@ function lifecyclesSlides() {
 }
 
 function storesSlides() {
-	return ['07-stores/07-TITLE.md', '07-stores/07-workshop-06.md'];
+	return [
+		'07-stores/07-TITLE.md',
+		'07-stores/07-props-drilling.md',
+		'07-stores/07-store-live-coding.md',
+		'07-stores/07-svelte-elements.md',
+		'07-stores/07-workshop-06.md'
+	];
 }
 
 function formSlides() {
@@ -99,7 +105,12 @@ function formSlides() {
 }
 
 function svelteKitSlides() {
-	return ['09-sveltekit/09-TITLE.md', '09-sveltekit/09-workshop-08.md'];
+	return [
+		'09-sveltekit/09-TITLE.md',
+		'09-sveltekit/09-presentation.md',
+		'09-sveltekit/09-files-structures.md',
+		'09-sveltekit/09-workshop-08.md'
+	];
 }
 
 function formation() {
