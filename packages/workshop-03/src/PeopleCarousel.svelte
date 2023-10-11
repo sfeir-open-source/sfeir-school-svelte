@@ -1,11 +1,11 @@
 <script lang="ts">
 	import PersonCard from './../../common/components/person-card/PersonCard.svelte';
-	import { range } from '../../common/utils';
+	import { range } from './utils';
 
 	export let people = [];
 
   // todo : cycle through the people array when clicking the previous
-	// and the next buttons. Look in ../../commons/utils.js for some utility
+	// and the next buttons. Look in ./utils.js for some utility
 	// functions you may need.
 </script>
 
