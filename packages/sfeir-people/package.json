@@ -1,7 +1,9 @@
 {
-	"name": "sfeir-people",
-	"scripts": {
-		"start": "vite dev"
-	},
-	"type": "module"
+  "name": "sfeir-people",
+  "scripts": {
+    "start": "vite dev",
+    "build": "vite build",
+    "serve": "vite serve"
+  },
+  "type": "module"
 }

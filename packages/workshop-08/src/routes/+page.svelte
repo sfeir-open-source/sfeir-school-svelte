@@ -28,11 +28,6 @@
 	});
 </script>
 
-<svelte:head>
-  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.4/css/bulma.min.css">
-  <script src="https://kit.fontawesome.com/ea210a45ce.js" crossorigin="anonymous"></script>
-</svelte:head>
-
 <!-- Create a SvelteKit layout to display the header and container div using slot -->
 
 <Header>
