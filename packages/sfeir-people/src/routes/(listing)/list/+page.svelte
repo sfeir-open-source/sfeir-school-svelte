@@ -5,6 +5,10 @@
 	export let data;
 </script>
 
+<svelte:head>
+  <title>SFEIR People - List</title>
+</svelte:head>
+
 {#if data?.people?.length > 0}
 	<PersonList people={data.people} />
 {:else}

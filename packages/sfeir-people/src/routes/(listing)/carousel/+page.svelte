@@ -3,6 +3,10 @@
 	export let data;
 </script>
 
+<svelte:head>
+  <title>SFEIR People - Carousel</title>
+</svelte:head>
+
 <div class="section">
   <div class="container is-max-desktop">
     <PeopleCarousel people={data.people} />

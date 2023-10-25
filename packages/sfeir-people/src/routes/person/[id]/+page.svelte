@@ -4,6 +4,10 @@
 	export let data: Person;
 </script>
 
+<svelte:head>
+  <title>SFEIR People - {data.firstname} {data.lastname}</title>
+</svelte:head>
+
 <div class="person-card-container">
 	{#if data.id}
 		<PersonCard person={data} isEditable={true} class="mt-5" />
