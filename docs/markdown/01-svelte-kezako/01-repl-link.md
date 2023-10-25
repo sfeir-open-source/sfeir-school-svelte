@@ -4,7 +4,7 @@
 
 <p>Pour récupérer les bouts de code des live codings :</p>
 
-[REPL de la School](https://bit.ly/sfeir-school-svelte-repl)
+[bit.ly/repl-sfeir-school-svelte](bit.ly/repl-sfeir-school-svelte)
 
 <br>
 

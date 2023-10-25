@@ -7,6 +7,7 @@
   // todo : cycle through the people array when clicking the previous
 	// and the next buttons. Look in ./utils.js for some utility
 	// functions you may need.
+  let index = 1;
 </script>
 
 <div class="carousel">
