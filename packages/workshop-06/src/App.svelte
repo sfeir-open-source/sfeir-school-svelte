@@ -23,7 +23,7 @@
 	<HeaderMenu slot="menu" {currentPage} on:clickLink={switchPage} />
 </Header>
 
-<div class="container pt-6">
+<div class="container">
 	{#if isPeopleLoading}
 		<Loader class="mt-6" />
 	{:else}

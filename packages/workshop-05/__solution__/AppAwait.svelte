@@ -1,7 +1,7 @@
 <script lang="ts">
 	import Header from '$common/components/header/Header.svelte';
 	import HeaderMenu from '$common/components/header/HeaderMenu.svelte';
-  import Loader from '$common/components/Loader.svelte';
+	import Loader from '$common/components/Loader.svelte';
 	import PersonCard from '$common/components/person-card/PersonCard.svelte';
 	import PeopleCarousel from '$common/components/people-carousel/PeopleCarousel.svelte';
 
@@ -18,7 +18,7 @@
 	<HeaderMenu slot="menu" {currentPage} on:clickLink={switchPage} />
 </Header>
 
-<div class="container pt-6">
+<div class="container">
 	{#await loadPeople()}
 		<Loader class="mt-6" />
 	{:then people}

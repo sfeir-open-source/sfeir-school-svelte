@@ -1,11 +1,11 @@
 <script lang="ts">
 	import logo from '$common/images/Header.logo.svg';
 	import PersonCard from '$common/components/person-card/PersonCard.svelte';
-  import PeopleCarousel from '$common/components/people-carousel/PeopleCarousel.svelte';
+	import PeopleCarousel from '$common/components/people-carousel/PeopleCarousel.svelte';
 
 	import data from './../../../data/people.json';
 
-  const people = data?.people || [];
+	const people = data?.people || [];
 
 	let currentPage: 'LIST' | 'CAROUSEL' = 'LIST';
 
@@ -54,7 +54,7 @@
 </nav>
 
 <!-- Main content -->
-<div class="container pt-6">
+<div class="container">
 	{#if currentPage === 'LIST'}
 		<section class="section">
 			<div class="columns is-multiline margin-medium">
@@ -69,4 +69,3 @@
 		<PeopleCarousel {people} />
 	{/if}
 </div>
-

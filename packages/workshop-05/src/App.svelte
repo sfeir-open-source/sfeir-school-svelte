@@ -19,28 +19,28 @@
 	<HeaderMenu slot="menu" {currentPage} on:clickLink={switchPage} />
 </Header>
 
-<div class="container pt-6">
-	<br />
-	<br />
-	<p class="has-text-centered">
-		Use <strong>onMount</strong> lifecycle method to load people data over the network
-	</p>
-	<br />
-	<p class="has-text-centered">
-		Bonus : replace <strong>onMount</strong>  with <strong>await</strong> block
-	</p>
+<section class="section">
+	<div class="container">
+		<p class="has-text-centered">
+			Use <strong>onMount</strong> lifecycle method to load people data over the network
+		</p>
+		<br />
+		<p class="has-text-centered">
+			Bonus : replace <strong>onMount</strong> with <strong>await</strong> block
+		</p>
 
-	{#if currentPage === 'LIST'}
-		<section class="section">
-			<div class="columns is-multiline margin-medium">
-				{#each people as person}
-					<div class="column is-4">
-						<PersonCard {person} />
-					</div>
-				{/each}
-			</div>
-		</section>
-	{:else}
-		<PeopleCarousel {people} />
-	{/if}
-</div>
+		{#if currentPage === 'LIST'}
+			<section class="section">
+				<div class="columns is-multiline margin-medium">
+					{#each people as person}
+						<div class="column is-4">
+							<PersonCard {person} />
+						</div>
+					{/each}
+				</div>
+			</section>
+		{:else}
+			<PeopleCarousel {people} />
+		{/if}
+	</div>
+</section>
