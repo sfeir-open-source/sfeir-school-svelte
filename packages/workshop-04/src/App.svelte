@@ -38,10 +38,14 @@
 </nav>
 
 <!-- Main content -->
-<div class="container pt-6">
-  <br >
-  <br >
-	<p class="has-text-centered">Switch between a list of person card and the carousel (components already imported)</p>
-	<br />
-	<p class="has-text-centered">Hint: use a component state to know which page to display, and link in header to toggle pages</p>
-</div>
+<section class="section">
+	<div class="container">
+		<p class="has-text-centered">
+			Switch between a list of person card and the carousel (components already imported)
+		</p>
+		<br />
+		<p class="has-text-centered">
+			Hint: use a component state to know which page to display, and link in header to toggle pages
+		</p>
+	</div>
+</section>
