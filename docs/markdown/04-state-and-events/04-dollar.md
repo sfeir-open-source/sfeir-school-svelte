@@ -2,9 +2,17 @@
 
 ## Le symbole "$"
 
+Pas OK
+
+```svelte
+let count = 0; 
+let doubledCount = count * 2;
+```
+
 Variables réactives
 
 ```svelte
+let count = 0;
 $: doubledCount = count * 2;
 ```
 

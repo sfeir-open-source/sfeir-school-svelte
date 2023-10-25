@@ -120,6 +120,10 @@ function svelteKitSlides() {
 	];
 }
 
+function conclusionSlides() {
+	return ['11-conclusion/11-conclusion.md'];
+}
+
 function formation() {
 	return [
 		//
@@ -133,7 +137,8 @@ function formation() {
 		...storesSlides(), //
 		...formSlides(), //
 		...runesSlides(), //
-		...svelteKitSlides() //
+		...svelteKitSlides(), //
+		...conclusionSlides() //
 	].map((slidePath) => {
 		return { path: slidePath };
 	});
