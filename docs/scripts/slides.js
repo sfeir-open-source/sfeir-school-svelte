@@ -4,8 +4,8 @@ import { SfeirThemeInitializer } from '../web_modules/sfeir-school-theme/sfeir-s
 function schoolSlides() {
 	return [
 		'00-school/00-TITLE.md',
-		'00-school/00-speaker-romain.md',
 		'00-school/00-speaker-antoine.md',
+		'00-school/00-speaker-leo.md',
 		'00-school/00-participant.md',
 		'00-school/00-deroulement.md',
 		'00-school/00-slides.md',
