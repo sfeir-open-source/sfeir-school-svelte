@@ -104,17 +104,24 @@ function formSlides() {
 	];
 }
 
+function runesSlides() {
+	return [
+		'09-runes/09-TITLE.md',
+		'09-runes/09-presentation.md'
+	];
+}
+
 function svelteKitSlides() {
 	return [
-		'09-sveltekit/09-TITLE.md',
-		'09-sveltekit/09-presentation.md',
-		'09-sveltekit/09-files-structures.md',
-		'09-sveltekit/09-workshop-08.md'
+		'10-sveltekit/10-TITLE.md',
+		'10-sveltekit/10-presentation.md',
+		'10-sveltekit/10-files-structures.md',
+		'10-sveltekit/10-workshop-08.md'
 	];
 }
 
 function conclusionSlides() {
-	return ['10-conclusion/10-conclusion.md'];
+	return ['11-conclusion/11-conclusion.md'];
 }
 
 function formation() {
@@ -129,6 +136,7 @@ function formation() {
 		...lifecyclesSlides(), //
 		...storesSlides(), //
 		...formSlides(), //
+		...runesSlides(), //
 		...svelteKitSlides(), //
 		...conclusionSlides() //
 	].map((slidePath) => {
