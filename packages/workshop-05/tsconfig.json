@@ -7,5 +7,5 @@
 			"$common/*": ["../common/*"]
 		}
 	},
-	"include": ["src/**/*.svelte", "__solution__/**/*.svelte"]
+	"include": ["src/**/*.svelte", "__solution__/**/*.svelte", "../global.d.ts"]
 }
